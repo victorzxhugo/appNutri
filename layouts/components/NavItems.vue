@@ -153,7 +153,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
 
   <VerticalNavLink
     :item="{
-      title: 'Account Settings',
+      title: 'Pacientes',
       icon: 'ri-user-settings-line',
       to: '/account-settings',
     }"
