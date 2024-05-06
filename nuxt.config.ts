@@ -1,13 +1,13 @@
 import { fileURLToPath } from 'node:url'
-import svgLoader from 'vite-svg-loader'
 import vuetify from 'vite-plugin-vuetify'
+import svgLoader from 'vite-svg-loader'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%s - NuxtJS Admin Template',
-      title: 'Materio',
+      titleTemplate: '%s - Plano inteligente',
+      title: 'NUTRI',
 
       link: [{
         rel: 'icon',

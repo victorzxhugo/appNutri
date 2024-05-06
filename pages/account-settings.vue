@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
-import AccountSettingsAccount from '@/views/pages/account-settings/AccountSettingsAccount.vue'
-import AccountSettingsNotification from '@/views/pages/account-settings/AccountSettingsNotification.vue'
-import AccountSettingsSecurity from '@/views/pages/account-settings/AccountSettingsSecurity.vue'
+import AccountSettingsAccount from '@/views/pages/account-settings/AccountSettingsAccount.vue';
+import AccountSettingsNotification from '@/views/pages/account-settings/AccountSettingsNotification.vue';
+import AccountSettingsSecurity from '@/views/pages/account-settings/AccountSettingsSecurity.vue';
+import { useRoute } from 'vue-router';
 
 const route = useRoute()
 
@@ -10,9 +10,9 @@ const activeTab = ref(route.params.tab)
 
 // tabs
 const tabs = [
-  { title: 'Paciente', icon: 'ri-group-line', tab: 'account' },
-  { title: 'Anamnese', icon: 'ri-lock-line', tab: 'security' },
-  { title: 'Avaliação', icon: 'ri-notification-3-line', tab: 'notification' },
+  { title: 'Paciente', icon: 'ri-id-card-line', tab: 'account' },
+  { title: 'Anamnese', icon: 'ri-file-list-line', tab: 'security' },
+  { title: 'Avaliação', icon: 'ri-ruler-line', tab: 'notification' },
 ]
 </script>
 

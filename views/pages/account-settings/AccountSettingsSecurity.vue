@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import avatar1 from '@images/avatars/avatar-1.png'
+import avatar1 from '@images/avatars/avatar-1.png';
 
 const accountData = {
   avatarImg: avatar1,
@@ -37,16 +37,6 @@ const resetForm = () => {
           <!-- 👉 Form -->
           <VForm class="mt-6">
             <VRow>
-              <!-- 👉 First Name -->
-              <VCol
-                md="13"
-                cols="12"
-              >
-              <b for="">Historico Alimentar</b>  
-              <VTextField
-                  label="Forma de alimentação nos ultimos anos"
-                />
-              </VCol>
               <VCol
                 md="13"
                 cols="12"
@@ -55,15 +45,22 @@ const resetForm = () => {
               <VTextField
                   label="Motivo específico que levou o paciente a consulta"
                 />
+              </VCol>              
+              <VCol
+                md="13"
+                cols="12"
+              >
+              <b for="">Historico Alimentar</b>  
+              <VTextarea
+                  label="Forma de alimentação nos ultimos anos"
+                />
               </VCol>
-
-
               <VCol
                 md="13"
                 cols="12"
               >
                 <b for="">Alergias</b>
-                <VTextField
+                <VTextarea
                   label="Alergias ou complicações geradas por determinados alimentos"
                 />
               </VCol>
@@ -73,7 +70,7 @@ const resetForm = () => {
                 cols="12"
               >
               <b for="">Rotina de alimentação</b>
-                <VTextField
+                <VTextarea
                   label="Número de refeições por dia e horários"
                 />
               </VCol>
@@ -84,7 +81,7 @@ const resetForm = () => {
                 cols="12"
               >
               <b>Rotina de atividade física</b>
-                <VTextField
+                <VTextarea
                   label="Atividades físicas exercidas, intensidade e periodicidade"
                 />
               </VCol>
@@ -94,7 +91,7 @@ const resetForm = () => {
                 cols="12"
               >
               <b for="">Preferencias e restrições</b>
-                <VTextField
+                <VTextarea
                   label="Preferencias por alimentos e alimentos que não gosta ou não consegue consumir"
                 />
               </VCol>

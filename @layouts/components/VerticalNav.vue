@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { Component } from 'vue'
-import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
-import { useDisplay } from 'vuetify'
-import logo from '@images/logo.svg?raw'
+import logo from '@images/logo.svg?raw';
+import type { Component } from 'vue';
+import { PerfectScrollbar } from 'vue3-perfect-scrollbar';
+import { useDisplay } from 'vuetify';
 
 interface Props {
   tag?: string | Component
@@ -65,7 +65,7 @@ const handleNavScroll = (evt: Event) => {
           />
 
           <h1 class="font-weight-medium leading-normal text-xl text-uppercase">
-            Materio
+            Plano Inteligente
           </h1>
         </NuxtLink>
       </slot>
