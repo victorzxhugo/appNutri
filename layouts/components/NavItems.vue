@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue'
-import VerticalNavGroup from '@layouts/components/VerticalNavGroup.vue'
-import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
+import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue';
+import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
 </script>
 
 <template>
   <!-- 👉 Dashboards -->
-  <VerticalNavGroup
+  <!-- <VerticalNavGroup
     :item="{
       title: 'Dashboards',
       badgeContent: '5',
@@ -20,140 +19,20 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
         to: '/dashboard',
       }"
     />
-    <VerticalNavLink
-      :item="{
-        title: 'CRM',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/dashboards/crm',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'ECommerce',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/dashboards/ecommerce',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Academy',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/dashboards/academy',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Logistics',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/dashboards/logistics',
-        target: '_blank',
-        badgeContent: 'Pro',
-        badgeClass: 'bg-light-primary text-primary',
-      }"
-    />
-  </VerticalNavGroup>
+   
+  </VerticalNavGroup> -->
 
-  <!-- 👉 Front Pages -->
-  <VerticalNavGroup
-    :item="{
-      title: 'Front Pages',
-      icon: 'ri-file-copy-line',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  >
-    <VerticalNavLink
-      :item="{
-        title: 'Landing',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/front-pages/landing-page',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Pricing',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/front-pages/pricing',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Payment',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/front-pages/payment',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Checkout',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/front-pages/checkout',
-        target: '_blank',
-      }"
-    />
-    <VerticalNavLink
-      :item="{
-        title: 'Help Center',
-        href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/front-pages/help-center',
-        target: '_blank',
-      }"
-    />
-  </VerticalNavGroup>
-
+ 
   <!-- 👉 Apps & Pages -->
   <VerticalNavSectionTitle
     :item="{
       heading: 'Apps & Pages',
     }"
   />
-  <VerticalNavLink
-    :item="{
-      title: 'Permissions',
-      icon: 'ri-lock-2-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/apps/permissions',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Email',
-      icon: 'ri-mail-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/apps/email',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Chat',
-      icon: 'ri-wechat-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/apps/chat',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
-  <VerticalNavLink
-    :item="{
-      title: 'Calendar',
-      icon: 'ri-calendar-line',
-      href: 'https://demos.themeselection.com/materio-vuetify-nuxtjs-admin-template/demo-1/apps/calendar',
-      target: '_blank',
-      badgeContent: 'Pro',
-      badgeClass: 'bg-light-primary text-primary',
-    }"
-  />
 
   <VerticalNavLink
     :item="{
-      title: 'Account Settings',
+      title: 'Pacientes',
       icon: 'ri-user-settings-line',
       to: '/account-settings',
     }"
@@ -182,7 +61,7 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
   />
 
   <!-- 👉 User Interface -->
-  <VerticalNavSectionTitle
+  <!-- <VerticalNavSectionTitle
     :item="{
       heading: 'User Interface',
     }"
@@ -207,10 +86,10 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'ri-bar-chart-box-line',
       to: '/cards',
     }"
-  />
+  /> -->
 
   <!-- 👉 Forms & Tables -->
-  <VerticalNavSectionTitle
+  <!-- <VerticalNavSectionTitle
     :item="{
       heading: 'Forms & Tables',
     }"
@@ -247,11 +126,11 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       title: 'Tables',
       icon: 'ri-table-alt-line',
       to: '/tables',
-    }"
+    }" -->
   />
 
   <!-- 👉 Others -->
-  <VerticalNavSectionTitle
+  <!-- <VerticalNavSectionTitle
     :item="{
       heading: 'Others',
     }"
@@ -281,5 +160,5 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
       icon: 'ri-lifebuoy-line',
       target: '_blank',
     }"
-  />
+  /> -->
 </template>

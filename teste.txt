@@ -1,0 +1,27 @@
+git init
+ 
+git status
+ 
+git add "nomearquivi.py"
+ 
+git add .
+ 
+git config --global user.email "you@example.com"
+ 
+git config --global user.name "your name"
+ 
+git commit -m "nome da mensagem"
+ 
+git remote add origin URL DO REPOSITORIO
+ 
+git push
+ 
+git push --set-upstream origin master
+ 
+git reflog
+ 
+git reset --hard CODIGO DO COMMIT
+ 
+git clone NOME DO REPOSITORIO
+ 
+git clone -b nome_da_branch URL_do_Repositório

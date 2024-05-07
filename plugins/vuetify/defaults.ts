@@ -106,6 +106,7 @@ export default {
     density: 'comfortable',
     color: 'primary',
     hideDetails: 'auto',
+    
   },
   VAutocomplete: {
     variant: 'outlined',
