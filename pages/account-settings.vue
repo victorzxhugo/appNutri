@@ -1,7 +1,9 @@
 <script lang="ts" setup>
-import AccountSettingsAccount from '@/views/pages/account-settings/AccountSettingsAccount.vue';
-import AccountSettingsNotification from '@/views/pages/account-settings/AccountSettingsNotification.vue';
-import AccountSettingsSecurity from '@/views/pages/account-settings/AccountSettingsSecurity.vue';
+import AccountSettingsPaciente from '@/views/pages/account-settings/AccountSettingsPaciente.vue';
+import AccountSettingsAvaliacao from '@/views/pages/account-settings/AccountSettingsAvaliacao.vue';
+import AccountSettingsAnamnese from '@/views/pages/account-settings/AccountSettingsAnamnese.vue';
+import AccountSettingsExames from '@/views/pages/account-settings/AccountSettingsExames.vue';
+import AccountSettingsComposicaoCorporal from '@/views/pages/account-settings/AccountSettingsComposicaoCorporal.vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
@@ -10,9 +12,11 @@ const activeTab = ref(route.params.tab)
 
 // tabs
 const tabs = [
-  { title: 'Paciente', icon: 'ri-id-card-line', tab: 'account' },
-  { title: 'Anamnese', icon: 'ri-file-list-line', tab: 'security' },
-  { title: 'Avaliação', icon: 'ri-ruler-line', tab: 'notification' },
+  { title: 'Paciente', icon: 'ri-id-card-line', tab: 'paciente' },
+  { title: 'Anamnese', icon: 'ri-file-list-line', tab: 'anamnese' },
+  { title: 'Avaliação', icon: 'ri-ruler-line', tab: 'avaliacao' },
+  { title: 'Exames', icon: 'ri-dossier-line', tab: 'exames' },
+  { title: 'Composição Corporal', icon: 'ri-body-scan-line', tab: 'composicaoCorporal' }
 ]
 </script>
 
@@ -42,18 +46,26 @@ const tabs = [
       :touch="false"
     >
       <!-- Account -->
-      <VWindowItem value="account">
-        <AccountSettingsAccount />
+      <VWindowItem value="paciente">
+        <AccountSettingsPaciente />
       </VWindowItem>
 
       <!-- Security -->
-      <VWindowItem value="security">
-        <AccountSettingsSecurity />
+      <VWindowItem value="anamnese">
+        <AccountSettingsAnamnese />
       </VWindowItem>
 
       <!-- Notification -->
-      <VWindowItem value="notification">
-        <AccountSettingsNotification />
+      <VWindowItem value="avaliacao">
+        <AccountSettingsAvaliacao />
+      </VWindowItem>
+      
+      <VWindowItem value="exames">
+        <AccountSettingsExames />
+      </VWindowItem>
+
+      <VWindowItem value="composicaoCorporal">
+        <AccountSettingsComposicaoCorporal />
       </VWindowItem>
     </VWindow>
   </div>
