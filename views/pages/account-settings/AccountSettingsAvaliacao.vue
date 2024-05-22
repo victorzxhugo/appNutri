@@ -1,21 +1,7 @@
 <script lang="ts" setup>
-import avatar1 from '@images/avatars/avatar-1.png'
-
 
 const accountData = {
-  avatarImg: avatar1,
-  firstName: 'john',
-  lastName: 'Doe',
-  email: 'johnDoe@example.com',
-  org: 'ThemeSelection',
-  phone: '+1 (917) 543-9876',
-  address: '123 Main St, New York, NY 10001',
-  state: 'New York',
-  zip: '10001',
-  country: 'USA',
-  language: 'English',
-  timezone: '(GMT-11:00) International Date Line West',
-  currency: 'USD',
+ 
 }
 
 const accountDataLocal = ref(structuredClone(accountData))
@@ -29,11 +15,11 @@ const resetForm = () => {
 </script>
 
 <template>
-  <VCard title="Avaliação Física">
+  <VCardTitle>Avaliação Física</VCardTitle>
   <VRow>
     
     <VCol cols="12">
-      <VCard title="Medidas Antopométricas">
+      <VCard title="Medidas Antopométricas" >
         
 
         <VCardText>
@@ -47,6 +33,7 @@ const resetForm = () => {
                
               <VTextField
                   label="Idade"
+                  model="Age"
                 />
               </VCol>
               <VCol
@@ -202,7 +189,7 @@ const resetForm = () => {
                 cols="12"
                 class="d-flex flex-wrap gap-4"
               >
-                <VBtn>Save changes</VBtn>
+                <VBtn>Salvar</VBtn>
 
                 <VBtn
                   color="secondary"
@@ -210,10 +197,10 @@ const resetForm = () => {
                   type="reset"
                   @click.prevent="resetForm"
                 >
-                  Reset
+                  Limpar
                 </VBtn>
               </VCol>
     
   </VRow>
-</VCard>
+
 </template>

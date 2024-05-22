@@ -29,7 +29,13 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
       heading: 'Apps & Pages',
     }"
   />
-
+  <VerticalNavLink
+    :item="{
+      title: 'Registro de pacientes',
+      icon: 'ri-user-add-line',
+      to: '/patient-registration',
+    }"
+  />
   <VerticalNavLink
     :item="{
       title: 'Pacientes',

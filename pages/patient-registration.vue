@@ -40,7 +40,7 @@ const resetAvatar = () => {
 <template>
   <VRow>
     <VCol cols="12">
-      <VCard title="Dados do paciente">
+      <VCard title="Registrar paciente">
         <VCardText class="d-flex">
           <!-- 👉 Avatar -->
           <VAvatar
@@ -61,7 +61,7 @@ const resetAvatar = () => {
                   icon="ri-upload-cloud-line"
                   class="d-sm-none"
                 />
-                <span class="d-none d-sm-block">Alterar foto</span>
+                <span class="d-none d-sm-block">Carregar uma foto</span>
               </VBtn>
 
               <input
@@ -88,7 +88,7 @@ const resetAvatar = () => {
             </div>
 
             <p class="text-body-1 mb-0">
-              Permitido JPG, GIF ou PNG. Tamanho máximo 800K
+              Permitido JPG, GIF ou PNG. Tamanho máximo de 800K
             </p>
           </form>
         </VCardText>
@@ -180,7 +180,7 @@ const resetAvatar = () => {
                   
                 />
               </VCol>
-              
+             
             </VRow>
           </VForm>
         </VCardText>
@@ -190,7 +190,7 @@ const resetAvatar = () => {
                 cols="12"
                 class="d-flex flex-wrap gap-4"
               >
-                <VBtn>Salvar</VBtn>
+                <VBtn>Registrar</VBtn>
 
                 <VBtn
                   color="secondary"
