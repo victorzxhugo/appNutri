@@ -1,5 +1,5 @@
 {
-  "name": "materio-nuxtjs-admin-template-free",
+  "name": "dev-nutri",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -17,15 +17,18 @@
     "@vueuse/core": "^10.5.0",
     "@vueuse/math": "^10.5.0",
     "apexcharts": "3.37.0",
+    "firebase": "^10.12.0",
     "pinia": "^2.1.7",
     "prismjs": "^1.29.0",
     "roboto-fontface": "^0.10.0",
+    "sweetalert2": "^11.11.0",
     "vue-flatpickr-component": "11.0.3",
     "vue-prism-component": "^2.0.0",
     "vue3-apexcharts": "^1.4.4",
     "vue3-perfect-scrollbar": "^1.6.1",
     "vuetify": "3.4.9",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@antfu/eslint-config-vue": "^0.43.1",

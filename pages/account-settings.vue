@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import AccountSettingsPaciente from '@/views/pages/account-settings/AccountSettingsPaciente.vue';
-import AccountSettingsAvaliacao from '@/views/pages/account-settings/AccountSettingsAvaliacao.vue';
 import AccountSettingsAnamnese from '@/views/pages/account-settings/AccountSettingsAnamnese.vue';
-import AccountSettingsExames from '@/views/pages/account-settings/AccountSettingsExames.vue';
+import AccountSettingsAvaliacao from '@/views/pages/account-settings/AccountSettingsAvaliacao.vue';
 import AccountSettingsComposicaoCorporal from '@/views/pages/account-settings/AccountSettingsComposicaoCorporal.vue';
+import AccountSettingsExames from '@/views/pages/account-settings/AccountSettingsExames.vue';
+import AccountSettingsPaciente from '@/views/pages/account-settings/AccountSettingsPaciente.vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()

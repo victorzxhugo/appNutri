@@ -126,8 +126,8 @@ import VerticalNavLink from '@layouts/components/VerticalNavLink.vue';
       title: 'Tables',
       icon: 'ri-table-alt-line',
       to: '/tables',
-    }" -->
-  />
+    }" 
+  />-->
 
   <!-- 👉 Others -->
   <!-- <VerticalNavSectionTitle

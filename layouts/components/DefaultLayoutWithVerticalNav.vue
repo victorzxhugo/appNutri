@@ -23,12 +23,12 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
         </IconBtn>
 
         <!-- 👉 Search -->
-        <div
+        <!-- <div
           class="d-flex align-center cursor-pointer"
           style="user-select: none;"
-        >
+        > -->
           <!-- 👉 Search Trigger button -->
-          <IconBtn>
+          <!-- <IconBtn>
             <VIcon icon="ri-search-line" />
           </IconBtn>
 
@@ -36,11 +36,11 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
             <span class="me-3">Search</span>
             <span class="meta-key">&#8984;K</span>
           </span>
-        </div>
+        </div> -->
 
         <VSpacer />
 
-        <IconBtn
+        <!-- <IconBtn
           class="me-2"
           href="https://github.com/themeselection/materio-vuetify-nuxtjs-admin-template-free"
           target="_blank"
@@ -51,7 +51,7 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
 
         <IconBtn class="me-2">
           <VIcon icon="ri-notification-line" />
-        </IconBtn>
+        </IconBtn> -->
 
         <NavbarThemeSwitcher class="me-2" />
 
